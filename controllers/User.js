@@ -78,7 +78,7 @@ export const addTask=async(req,res)=>{
         const user=await User.findById(req.user._id)
         user.tasks.push({title,description,complete:false,createdAt:new Date(Date.now())})
         await user.save()
-        res.status(200).json({success:true,message:"task added new "})
+        res.status(200).json({success:true,message:"task added new ",user})
 
     }catch(error){
         res.status(500).json({Pmessage:" failed to add new task",error})

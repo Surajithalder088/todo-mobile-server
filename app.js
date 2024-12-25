@@ -13,12 +13,12 @@ app.use(cors({
      methods:"GET,POST,PUT,DELETE"   
 
 }))
+apkurl="https://expo.dev/accounts/surajithalder088/projects/todo/builds/db9d8431-ff77-4998-9493-45b6f7294b07"
 app.get("/",(req,res)=>{
-    res.send("API is running")
+    res.send(`to download the app apk file , visit here  in your mobile ${apkurl}`)
+
+
 })
-
-
-
 
 
 app.use("/api/user/v1",userRouter)
