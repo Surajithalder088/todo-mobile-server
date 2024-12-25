@@ -13,7 +13,7 @@ app.use(cors({
      methods:"GET,POST,PUT,DELETE"   
 
 }))
-apkurl="https://expo.dev/accounts/surajithalder088/projects/todo/builds/db9d8431-ff77-4998-9493-45b6f7294b07"
+const apkurl="https://expo.dev/accounts/surajithalder088/projects/todo/builds/db9d8431-ff77-4998-9493-45b6f7294b07"
 app.get("/",(req,res)=>{
     res.send(`to download the app apk file , visit here  in your mobile ${apkurl}`)
 
